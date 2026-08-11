@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="
+         http://maven.apache.org/POM/4.0.0
+         https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.dlframework</groupId>
+
+    <artifactId>djl-mnist-benchmark</artifactId>
+
+    <version>1.0-SNAPSHOT</version>
+
+
+    <!-- ====================================================== -->
+    <!-- Properties                                             -->
+    <!-- ====================================================== -->
+
+    <properties>
+
+        <project.build.sourceEncoding>
+            UTF-8
+        </project.build.sourceEncoding>
+
+        <maven.compiler.release>
+            17
+        </maven.compiler.release>
+
+        <djl.version>
+            0.36.0
+        </djl.version>
+
+        <pytorch.version>
+            2.7.1
+        </pytorch.version>
+
+    </properties>
+
+
+    <!-- ====================================================== -->
+    <!-- Dependencies                                           -->
+    <!-- ====================================================== -->
+
+    <dependencies>
+
+        <!-- DJL Core API -->
+
+        <dependency>
+
+            <groupId>ai.djl</groupId>
+
+            <artifactId>api</artifactId>
+
+            <version>${djl.version}</version>
+
+        </dependency>
+
+
+        <!-- DJL PyTorch Engine -->
+
+        <dependency>
+
+            <groupId>ai.djl.pytorch</groupId>
+
+            <artifactId>pytorch-engine</artifactId>
+
+            <version>${djl.version}</version>
+
+        </dependency>
+
+
+        <!-- PyTorch JNI -->
+
+        <dependency>
+
+            <groupId>ai.djl.pytorch</groupId>
+
+            <artifactId>pytorch-jni</artifactId>
+
+            <version>
+                ${pytorch.version}-${djl.version}
+            </version>
+
+        </dependency>
+
+
+        <!-- PyTorch CPU Native Library -->
+
+        <dependency>
+
+            <groupId>ai.djl.pytorch</groupId>
+
+            <artifactId>pytorch-native-cpu</artifactId>
+
+            <version>${pytorch.version}</version>
+
+            <scope>runtime</scope>
+
+        </dependency>
+
+
+        <!-- Simple SLF4J logger -->
+
+        <dependency>
+
+            <groupId>org.slf4j</groupId>
+
+            <artifactId>slf4j-simple</artifactId>
+
+            <version>2.0.17</version>
+
+        </dependency>
+
+    </dependencies>
+
+
+    <!-- ====================================================== -->
+    <!-- Build                                                   -->
+    <!-- ====================================================== -->
+
+    <build>
+
+        <plugins>
+
+            <!-- Java compiler -->
+
+            <plugin>
+
+                <groupId>
+                    org.apache.maven.plugins
+                </groupId>
+
+                <artifactId>
+                    maven-compiler-plugin
+                </artifactId>
+
+                <version>3.14.0</version>
+
+                <configuration>
+
+                    <release>17</release>
+
+                </configuration>
+
+            </plugin>
+
+
+            <!-- Run Java program -->
+
+            <plugin>
+
+                <groupId>
+                    org.codehaus.mojo
+                </groupId>
+
+                <artifactId>
+                    exec-maven-plugin
+                </artifactId>
+
+                <version>3.5.0</version>
+
+                <configuration>
+
+                    <mainClass>
+                        Main
+                    </mainClass>
+
+                </configuration>
+
+            </plugin>
+
+        </plugins>
+
+    </build>
+
+</project>
