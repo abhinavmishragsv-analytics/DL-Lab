@@ -1,0 +1,6 @@
+Framework,Language,Training_Time_Seconds,Test_Accuracy_Percent,Benchmark_Accuracy_Percent,Average_Time_Per_Image_ms
+TensorFlow,Python,16.28,97.04,90.00,7.2410
+Keras,Python,8.77,96.88,90.00,7.8613
+PyTorch,Python,7.48,97.29,90.00,0.0100
+DJL,Java,18.63,97.78,90.00,
+LibTorch,C++,,,90.00,0.0286
