@@ -1,4 +1,4 @@
-\# Deep Learning Framework Comparison
+# Deep Learning Framework Comparison
 
 
 
@@ -14,11 +14,11 @@ The project compares three Python-based frameworks and two non-Python frameworks
 
 
 
-\## Frameworks Compared
+## Frameworks Compared
 
 
 
-\### Python Frameworks
+### Python Frameworks
 
 
 
@@ -30,7 +30,7 @@ The project compares three Python-based frameworks and two non-Python frameworks
 
 
 
-\### Non-Python Frameworks
+### Non-Python Frameworks
 
 
 
@@ -44,7 +44,7 @@ The project compares three Python-based frameworks and two non-Python frameworks
 
 
 
-\## Objective
+## Objective
 
 
 
@@ -68,7 +68,7 @@ The objective of this project is to implement the same MNIST classification task
 
 
 
-\## Dataset
+## Dataset
 
 
 
