@@ -1,0 +1,22 @@
+{
+  "binary_classification": {
+    "final_train_loss": 0.5443407505485084,
+    "final_val_loss": 0.6156672250328542,
+    "test_accuracy": 0.7133333333333334,
+    "test_precision": 0.7715736040609137,
+    "test_recall": 0.7875647668393783,
+    "test_f1": 0.7794871794871795,
+    "gradient_check_max_rel_error": 1.6782474206747078e-07
+  },
+  "multiclass_classification": {
+    "test_accuracy": 1.0,
+    "test_macro_f1": 1.0,
+    "gradient_check_max_rel_error": 1.081595912823461e-08
+  },
+  "regression": {
+    "mse": 0.34098999952449416,
+    "rmse": 0.5839434900095164,
+    "mae": 0.4244529502594188,
+    "r2": 0.9653481904252589
+  }
+}
